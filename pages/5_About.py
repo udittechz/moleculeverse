@@ -11,7 +11,7 @@ st.markdown(f"**{config.INSTITUTION}**  \n{config.DEPARTMENT_LINE}")
 
 st.subheader("Purpose and educational objectives")
 st.write(
-    "MoleculeVerse is an academic project that lets students explore molecules computationally: reading and writing SMILES, "
+    "MoleculeVerse is an academic project of Udit Narayan Mandal that lets students explore molecules computationally: reading and writing SMILES, "
     "viewing 2D and 3D structures, calculating descriptors, and comparing molecules. It is a teaching tool, not a research or safety tool."
 )
 st.markdown(
