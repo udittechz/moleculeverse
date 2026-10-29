@@ -179,7 +179,12 @@ if section == "Analyze":
                     c1.selectbox("Style", visualization.STYLE_NAMES, key="mv_viewer_style")
                     c2.selectbox("Atom colours", visualization.COLOR_NAMES, key="mv_viewer_colors")
                     c3.selectbox("Background", visualization.BACKGROUND_NAMES, key="mv_viewer_bg")
-                    spin = c4.checkbox("Start spinning", key="mv_viewer_spin")
+                   spin = c4.checkbox(
+    "Auto-rotate 360°",
+    value=True,
+    key="mv_viewer_spin",
+    help="Automatically rotate the molecule. Uncheck to stop."
+)
                     with st.spinner("Generating a 3D conformer (RDKit ETKDG + force field)..."):
                         conf = ui.cached_3d(smiles)
                     if conf["ok"]:
